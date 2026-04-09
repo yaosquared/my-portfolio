@@ -1,5 +1,6 @@
 import { Inknut_Antiqua } from "next/font/google";
 import "./preloader.css";
+import { useEffect, useState } from "react";
 
 const inknutAntiqua = Inknut_Antiqua({
   subsets: ["latin"],
@@ -8,6 +9,26 @@ const inknutAntiqua = Inknut_Antiqua({
 });
 
 const PreLoader = () => {
+  const [visible, setVisible] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("hasVisited");
+
+    if (hasVisited) {
+      setVisible(false);
+      return;
+    }
+
+    const timer = setTimeout(() => {
+      localStorage.setItem("hasVisited", "true");
+      setVisible(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!visible) return null;
+
   return (
     <div className="w-full h-screen overflow-hidden flex justify-center items-center">
       <div

@@ -115,8 +115,8 @@ const Hero = () => {
             borderRadius="0.5rem"
             className="p-3 font-semibold cursor-default"
           >
-            {/* <p>📣 Available for Work!</p> */}
-            <p>🚀 Frontend Developer @ ParallelQuantum Corp.</p>
+            <p>📣 Available for Work!</p>
+            {/* <p>🚀 position @ companyName</p> */}
           </MovingBorderBtn>
         </div>
       </motion.div>

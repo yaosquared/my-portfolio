@@ -11,6 +11,7 @@ import {
   SiJira,
   SiPrisma,
   SiMongoose,
+  SiFastapi,
 } from "react-icons/si";
 import {
   FaHtml5,
@@ -221,15 +222,20 @@ const skillList: SkillProps[] = [
     text: "Express.js",
     icon: SiExpress,
   },
+  // {
+  //   id: 11,
+  //   text: "EJS",
+  //   icon: SiEjs,
+  // },
   {
     id: 11,
-    text: "EJS",
-    icon: SiEjs,
+    text: "Python",
+    icon: FaPython,
   },
   {
     id: 12,
-    text: "Python",
-    icon: FaPython,
+    text: "FastAPI",
+    icon: SiFastapi,
   },
   {
     id: 13,
@@ -431,12 +437,14 @@ const expList: ExperienceProps[] = [
     location: "ParallelQuantum Corp.",
     description:
       "Develops responsive web interfaces from Figma designs and integrates backend APIs to deliver seamless, data-driven user experiences.",
-    date: "Oct 2025 - Present",
+    date: "Oct 2025 - April 2026",
+    img: "/pqc-logo.jpg",
     tech: [
       "React",
       "Next.js",
       "Sass",
       "TypeScript",
+      "JavaScript",
       "Git",
       "Gitlab",
       "Figma",
