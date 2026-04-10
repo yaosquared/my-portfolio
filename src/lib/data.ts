@@ -438,7 +438,7 @@ const expList: ExperienceProps[] = [
     description:
       "Develops responsive web interfaces from Figma designs and integrates backend APIs to deliver seamless, data-driven user experiences.",
     date: "Oct 2025 - April 2026",
-    img: "/pqc-logo.jpg",
+    img: "/pqc-logo.png",
     tech: [
       "React",
       "Next.js",

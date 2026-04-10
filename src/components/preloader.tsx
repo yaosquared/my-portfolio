@@ -10,17 +10,21 @@ const inknutAntiqua = Inknut_Antiqua({
 
 const PreLoader = () => {
   const [visible, setVisible] = useState<boolean | null>(null);
+  const ONE_DAY = 24 * 60 * 60 * 1000;
 
   useEffect(() => {
-    const hasVisited = localStorage.getItem("hasVisited");
+    const lastSeen = localStorage.getItem("hasVisited");
+    const now = Date.now();
 
-    if (hasVisited) {
+    if (lastSeen && now - Number(lastSeen) < ONE_DAY) {
       setVisible(false);
       return;
     }
 
+    setVisible(true);
+
     const timer = setTimeout(() => {
-      localStorage.setItem("hasVisited", "true");
+      localStorage.setItem("hasVisited", String(now));
       setVisible(false);
     }, 3000);
 
