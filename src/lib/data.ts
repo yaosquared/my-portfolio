@@ -23,6 +23,7 @@ import {
   FaLinkedin,
   FaNodeJs,
   FaConfluence,
+  FaVuejs,
 } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
 import { GoDatabase } from "react-icons/go";
@@ -64,6 +65,27 @@ const navLinks: NavLinkProps[] = [
 const projectList: ProjectProps[] = [
   {
     id: 1,
+    title: "Ledgr",
+    lightImg: "/ledgr.png",
+    darkImg: "/ledgr.png",
+    desc: "A personal finance and productivity management application designed to help users track transactions, manage budgets, set financial goals, monitor attendance, and generate insightful reports — all in one place.",
+    logo: "/ysqrd-logo.png",
+    tech: [
+      "TypeScript",
+      "Vue.js",
+      "TanStack Query",
+      "Sass",
+      "SQL",
+      "PostgreSQL",
+      "Vercel",
+      "Render",
+    ],
+    siteLink: "https://ledgr-self.vercel.app/",
+    repoLink: "https://github.com/yaosquared/budget-app",
+    target: "_blank",
+  },
+  {
+    id: 2,
     title: "PCRMS",
     lightImg: "/pcrms.JPG",
     darkImg: "/pcrms-dark.JPG",
@@ -128,7 +150,7 @@ const projectList: ProjectProps[] = [
   //   target: "_blank",
   // },
   {
-    id: 2,
+    id: 3,
     title: "IMS",
     lightImg: "/ims.JPG",
     darkImg: "/ims.JPG",
@@ -150,7 +172,7 @@ const projectList: ProjectProps[] = [
     target: "_blank",
   },
   {
-    id: 3,
+    id: 4,
     title: "Portfolio",
     lightImg: "/portfolio.JPG",
     darkImg: "/portfolio-dark.JPG",
@@ -214,11 +236,16 @@ const skillList: SkillProps[] = [
   },
   {
     id: 9,
+    text: "Vue.js",
+    icon: FaVuejs,
+  },
+  {
+    id: 10,
     text: "Node.js",
     icon: FaNodeJs,
   },
   {
-    id: 10,
+    id: 11,
     text: "Express.js",
     icon: SiExpress,
   },
@@ -228,25 +255,25 @@ const skillList: SkillProps[] = [
   //   icon: SiEjs,
   // },
   {
-    id: 11,
+    id: 12,
     text: "Python",
     icon: FaPython,
   },
   {
-    id: 12,
+    id: 13,
     text: "FastAPI",
     icon: SiFastapi,
   },
   {
-    id: 13,
+    id: 14,
     text: "SQL",
     icon: GoDatabase,
   },
-  {
-    id: 14,
-    text: "Prisma",
-    icon: SiPrisma,
-  },
+  // {
+  //   id: 14,
+  //   text: "Prisma",
+  //   icon: SiPrisma,
+  // },
   {
     id: 15,
     text: "MongoDB",
